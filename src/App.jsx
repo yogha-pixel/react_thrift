@@ -6,10 +6,12 @@ import ItemList from "./pages/items/ItemList";
 import ItemCreate from "./pages/items/ItemCreate";
 import Cart from "./pages/cart/Cart";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
