@@ -1,14 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/auth/Login";
-import Register from "./pages/auth/Register";
-import Profile from "./pages/auth/Profile";
-import ItemList from "./pages/items/ItemList";
-import ItemCreate from "./pages/items/ItemCreate";
-import Cart from "./pages/cart/Cart";
-import ProtectedRoute from "./routes/ProtectedRoute";
-import Navbar from "./components/Navbar";
+import ItemsPage from "./pages/ItemsPage";
+import AddItem from "./pages/AddItem";
+import EditItem from "./pages/EditItem";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
